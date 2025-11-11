@@ -107,7 +107,7 @@ const DragDropFiles = () => {
         <form className="dropping" onSubmit={handleSubmit}>
           <label htmlFor="file" className="dropzone" onDragOver={handleDragOver} onDrop={handleDrop} style={{ cursor: "pointer" }}>
             <img src={upl} alt="uploadIcon" style={uploadStyle} />
-            <span className="drag-drop">Drag and Drop an Image or {""}</span>
+            <span className="drag-drop"> Drop images here, or click to upload. {""}</span>
             <input type="file" id="file" onChange={(event) => setFiles(event.target.files[0])} hidden ref={inputRef} />
           </label>
           <div className="predictButton">
